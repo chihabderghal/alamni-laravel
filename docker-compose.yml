@@ -1,0 +1,58 @@
+version: "3.8"
+
+services:
+    db:
+        image: mariadb:lts
+        container_name: alamni_db
+        restart: always
+        environment:
+            MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: yes
+            MARIADB_DATABASE: alamni
+        volumes:
+            - "db:/var/lib/mysql"
+        networks:
+            - net
+
+    cache:
+        image: redis:7-alpine
+        container_name: alamni_cache
+        command: redis-server
+        volumes:
+            - "cache:/data"
+        networks:
+            - net
+
+    adminer:
+        image: adminer:latest
+        container_name: alamni_adminer
+        restart: always
+        environment:
+            ADMINER_PLUGINS: "tables-filter tinymce"
+        ports:
+            - "8020:8000"
+        depends_on:
+            - db
+        networks:
+            - net
+
+    app:
+        image: alamni-laravel:dev
+        container_name: alamni_app
+        ports:
+            - "8000:8000"
+        volumes:
+            - ".:/app"
+        depends_on:
+            - db
+            - cache
+        networks:
+            - net
+
+networks:
+    net:
+        driver: bridge
+
+volumes:
+    cache:
+    db:
+
