@@ -22,11 +22,11 @@
           href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
 
     {{-- Plugins CSS --}}
-    <link rel="stylesheet" type="text/css" href="{{ asset(' template/vendor/font-awesome/css/all.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset(' template/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('template/vendor/font-awesome/css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('template/vendor/bootstrap-icons/bootstrap-icons.css') }}">
 
     {{-- Theme CSS --}}
-    <link rel="stylesheet" type="text/css" href="{{ asset(' template/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('template/css/style.css') }}">
 </head>
 
 <body>
@@ -47,25 +47,25 @@
                             <p class="mb-0 h6 fw-light">Let's learn something new today!</p>
                         </div>
                         {{-- SVG Image --}}
-                        <img src="{{ asset(' template/images/element/02.svg') }}" class="mt-5" alt="">
+                        <img src="{{ asset('template/images/element/02.svg') }}" class="mt-5" alt="">
                         {{-- Info --}}
                         <div class="d-sm-flex mt-5 align-items-center justify-content-center">
                             {{-- Avatar group --}}
                             <ul class="avatar-group mb-2 mb-sm-0">
                                 <li class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" src="{{ asset(' template/images/avatar/01.jpg') }}"
+                                    <img class="avatar-img rounded-circle" src="{{ asset('template/images/avatar/01.jpg') }}"
                                          alt="avatar">
                                 </li>
                                 <li class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" src="{{ asset(' template/images/avatar/02.jpg') }}"
+                                    <img class="avatar-img rounded-circle" src="{{ asset('template/images/avatar/02.jpg') }}"
                                          alt="avatar">
                                 </li>
                                 <li class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" src="{{ asset(' template/images/avatar/03.jpg') }}"
+                                    <img class="avatar-img rounded-circle" src="{{ asset('template/images/avatar/03.jpg') }}"
                                          alt="avatar">
                                 </li>
                                 <li class="avatar avatar-sm">
-                                    <img class="avatar-img rounded-circle" src="{{ asset(' template/images/avatar/04.jpg') }}"
+                                    <img class="avatar-img rounded-circle" src="{{ asset('template/images/avatar/04.jpg') }}"
                                          alt="avatar">
                                 </li>
                             </ul>
@@ -91,10 +91,10 @@
 <div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
 
 {{-- Bootstrap JS --}}
-<script src="{{ asset(' template/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('template/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
 {{-- Template Functions --}}
-<script src="{{ asset(' template/js/functions.js') }}"></script>
+<script src="{{ asset('template/js/functions.js') }}"></script>
 
 </body>
 </html>
