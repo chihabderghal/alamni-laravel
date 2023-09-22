@@ -15,12 +15,12 @@
 
                         {{-- Name --}}
                         <div class="mb-4">
-                            <label for="exampleInputEmail1" class="form-label">Your Name:</label>
+                            <label for="" class="form-label">Your Name:</label>
                             <div class="input-group input-group-lg">
                                 <span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
                                         class="bi bi-person"></i></span>
-                                <input type="email" class="form-control border-0 bg-light rounded-end ps-1 @error('name') is-invalid @enderror"
-                                       placeholder="Joe" id="exampleInputEmail1" name="name">
+                                <input class="form-control border-0 bg-light rounded-end ps-1 @error('name') is-invalid @enderror"
+                                       placeholder="Name" id="" name="name">
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -31,12 +31,12 @@
 
                     {{-- Email --}}
                     <div class="mb-4">
-                        <label for="" class="form-label">Email address:</label>
+                        <label for="exampleInputEmail1" class="form-label">Email address:</label>
                         <div class="input-group input-group-lg">
                                 <span class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
                                         class="bi bi-envelope-fill"></i></span>
                             <input type="email" class="form-control border-0 bg-light rounded-end ps-1 @error('email') is-invalid @enderror"
-                                   placeholder="E-mail" id="" name="email">
+                                   placeholder="E-mail" id="exampleInputEmail1" name="email">
                             @error('email')
                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -83,7 +83,7 @@
 
                 {{-- Sign up link --}}
                 <div class="mt-4 text-center">
-                    <span>Already have an account?<a href=""> Sign in here</a></span>
+                    <span>Already have an account?<a href="{{ route('login') }}"> Login in here</a></span>
                 </div>
 
                 {{-- Social buttons and divider --}}
