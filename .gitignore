@@ -18,3 +18,13 @@ yarn-error.log
 /.idea
 /.vscode
 /storage/template/
+
+
+# Laravel IDE Helper
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+
+.bash_history
+.viminfo
+.composer
