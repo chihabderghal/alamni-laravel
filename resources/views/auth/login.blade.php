@@ -79,7 +79,7 @@
 
                     {{-- Social btn --}}
                     <div class="col-xxl-6 d-grid">
-                        <a href="#" class="btn bg-google mb-2 mb-xxl-0"><i
+                        <a href="/auth/google/redirect" class="btn bg-google mb-2 mb-xxl-0"><i
                                 class="fab fa-fw fa-google text-white me-2"></i>Login with Google</a>
                     </div>
                     {{-- Social btn --}}
