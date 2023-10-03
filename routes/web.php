@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\ProviderController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,7 @@ Route::get('/home', function () {
 
 })->middleware(['auth', 'verified']);
 
+
+Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
+
+Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
